@@ -1,0 +1,26 @@
+#!/usr/bin/python
+
+from sys import argv
+
+script, username = argv
+
+prompt = '> '
+
+print "hi %s, i'm the %s script." % (username, script)
+print "gonna ask you a few questions"
+print "do you like me %s" % username
+likes= raw_input(prompt)
+
+
+print "where do you live %s?" % username
+lives = raw_input(prompt)
+
+print "what type of computer do you have?"
+computer = raw_input(prompt)
+
+
+print """
+so you said %r about liking me.
+you live in %r. not sure where that is.
+and you have %r computer.
+""" % (likes, lives, computer)

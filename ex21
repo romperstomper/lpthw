@@ -1,0 +1,9 @@
+#!/usr/bin/python
+
+def add(a, b):
+  print "adding %d + %d" % (a, b)
+  sum = a + b
+  return sum
+
+age = add(30, 5)
+print age
